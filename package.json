@@ -4,8 +4,8 @@
   "description": "Ashi is a blog dedicated to exploring diverse topics, from technology and wellness to travel and culture.",
   "main": "main.js",
   "scripts": {
-    "build": "echo 'Skipping build'"
-}
+    "build": "echo 'No build step required!'"
+  }
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coder123-pixel/blog.git"
