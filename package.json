@@ -4,9 +4,8 @@
   "description": "Ashi is a blog dedicated to exploring diverse topics, from technology and wellness to travel and culture.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ng build"
-  },
+    "build": "echo 'Skipping build'"
+}
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coder123-pixel/blog.git"
@@ -25,7 +24,4 @@
     "url": "https://github.com/coder123-pixel/blog/issues"
   },
   "homepage": "https://github.com/coder123-pixel/blog#readme",
-  "devDependencies": {
-    "@angular/cli": "^18.2.6"
-  }
 }
