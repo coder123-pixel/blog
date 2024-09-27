@@ -11,12 +11,12 @@
     "url": "git+https://github.com/coder123-pixel/blog.git"
   },
   "keywords": [
-    "blog",
-    "technology",
-    "wellness",
-    "travel",
-    "culture",
-    "science"
+    "/blog/",
+    "/technology/",
+    "/wellness/",
+    "/travel/",
+    "/culture/",
+    "/science/"
   ],
   "author": "Ashi",
   "license": "ISC",
