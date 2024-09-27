@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "build": "echo 'No build step required!'"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coder123-pixel/blog.git"
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/coder123-pixel/blog/issues"
   },
-  "homepage": "https://github.com/coder123-pixel/blog#readme",
+  "homepage": "https://github.com/coder123-pixel/blog#readme"
 }
