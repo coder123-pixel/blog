@@ -4,7 +4,8 @@
   "description": "Ashi is a blog dedicated to exploring diverse topics, from technology and wellness to travel and culture.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx ng build"
   },
   "repository": {
     "type": "git",
