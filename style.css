@@ -1,20 +1,20 @@
-:root{
-  --light: #f8f9fa;
+:root {
+  --light: #f0f4f8;
   --secondary: rgb(50, 51, 52);
   --dark: rgb(27, 8, 3);
-  --primary-color:rgb(255, 190, 10);  
-  --secondary-color:rgba(15, 231, 247, 0.979);
-  --border:rgb(179, 244, 255);
+  --primary-color: rgb(255, 190, 10);
+  --secondary-color: rgba(15, 231, 247, 0.979);
+  --border: rgb(179, 244, 255);
 }
 
 body {
-  font-family:'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 *>* {
@@ -22,49 +22,67 @@ a {
 }
 
 
-.text-light{
-  color:var(--light);
+.text-light {
+  color: var(--light);
 }
 
-.text-dark{
-  color:var(--dark);
+.text-dark {
+  color: var(--dark);
 }
 
-.text-primary{
-  color:var(--primary-color);
+.text-primary {
+  color: var(--primary-color);
 }
 
 .bg-light {
-  background-color:var(--light);
+  background-color: var(--light);
+  caret-color: transparent;
 }
 
-.container{
+.container {
   max-width: 1200px;
-  padding:0 15px;
+  padding: 0 15px;
   margin: auto;
 }
+
 .navbar {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding:10px;
+  padding: 10px;
 }
- 
-.nav-brand{
-  font-family: "DM Sans", sans-serif;
+
+.nav-brand {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   align-self: center;
   font-size: 38px;
 }
-.home{
-  border-left:1px solid black;
-  padding-left:25px;
+
+.nav-brand {
+  color: rgb(0, 0, 0);
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
-.navigation{
-  border-right:1px solid black;
-  padding-right:25px;
+
+.nav-brand:hover {
+  color: var(--primary-color);
 }
+
+.home {
+  border-left: 1px solid black;
+  padding-left: 25px;
+}
+
+.navigation {
+  border-right: 1px solid black;
+  padding-right: 25px;
+}
+
 .collapse {
   align-self: center;
 }
@@ -73,16 +91,17 @@ a {
   font-size: 20px;
   margin: 12px;
   color: var(--dark);
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--primary-color);
 }
 
 .search-box {
   display: inline;
-  border-right:1px solid var(--secondary);
+  border-right: 1px solid var(--secondary);
   padding-right: 12px;
   margin-right: 10px;
 }
@@ -97,234 +116,96 @@ a {
   display: none;
 }
 
-.toggle-button:focus{
+.toggle-button:focus {
   outline: none;
 }
 
-@media(max-width: 761px){
-  .toggle-button{
+@media(max-width: 845px) {
+  .toggle-button {
     display: initial;
   }
-  .collapse{
+
+  .collapse {
     max-height: 0;
     overflow: hidden;
-    transition:all 1s cubic-bezier(0.87,-0.01, 0.15, 0.87);
+    transition: all 1s cubic-bezier(0.87, -0.01, 0.15, 0.87);
   }
-  .collapse.nav-link{
-      display: block;
-      text-align: center;
-}
-  .search-box{
+
+  .collapse.nav-link {
+    display: block;
+    text-align: center;
+  }
+
+  .search-box {
     border-right: none;
   }
-  .collapse-toggle{
+
+  .collapse-toggle {
     max-height: 500px;
   }
 }
 
-@media(max-width:992px){
-  .navbar{
+@media(max-width:992px) {
+  .navbar {
     flex-direction: column;
-}
-}
-
-/* POPPINS */
-
-
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+  }
 }
 
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/homebgwp.webp');
+  /* Replace with your image URL */
+  background-size: cover;
+  animation: scroll 100s linear infinite;
+  /* Adjust duration as needed */
+  z-index: -1;
+  filter: brightness(30%);
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center;
 }
 
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 100%;
+    /* Change 100% to 200% for a more extended scroll */
+  }
 }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 50px;
 }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+@media (max-width: 1350px) {
+  .background {
+      background-attachment: fixed; /* Keeps the background fixed */
+      filter: brightness(30%); /* Optional: adjust brightness for mobile */
+  }
+
+  .content {
+      padding: 20px; /* Reduce padding for smaller screens */
+  }
 }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+.content{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
 }
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.contentp {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
 }
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* ROBOTO */
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* DM SANS */
-/* <uniquifier>: Use a unique and descriptive class name */
-/* <weight>: Use a value from 100 to 1000 */
-
-.dm-sans {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-/*  */
-
-
-
-
