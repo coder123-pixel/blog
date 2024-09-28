@@ -160,7 +160,7 @@ a {
   background-image: url('homebgwp.webp');
   /* Replace with your image URL */
   background-size: cover;
-  animation: scroll 100s linear infinite;
+  animation: scroll 50s linear infinite;
   /* Adjust duration as needed */
   z-index: -1;
   filter: brightness(30%);
