@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+body{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.466));
+    background-repeat: no-repeat;
+}
+
+.blog-card {
+    margin: 20px; /* Adjust spacing between blog cards */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 10px; /* Add padding inside the card */
+    background-color: #f9f9f9; /* Optional: Add background color */
+}
+
+.blog-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 500px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper spacing */
+    margin: 0 auto; /* Center the image */
+}
+
+.blog-title {
+    font-size: 1.2em; /* Adjust title size */
+}
+
+.blog-overview {
+    font-size: 0.9em; /* Adjust overview size */
+}
