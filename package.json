@@ -1,0 +1,38 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Ashi is a blog dedicated to exploring diverse topics, from technology and wellness to travel and culture.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coder123-pixel/blog.git"
+  },
+  "keywords": [
+    "blog",
+    "technology",
+    "wellness",
+    "travel",
+    "culture",
+    "science"
+  ],
+  "author": "Ashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coder123-pixel/blog/issues"
+  },
+  "homepage": "https://github.com/coder123-pixel/blog#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "express-fileupload": "^1.5.1",
+    "express.js": "^1.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.7",
+    "prohairesis": "^1.2.4",
+    "status": "^0.0.6"
+  }
+}
